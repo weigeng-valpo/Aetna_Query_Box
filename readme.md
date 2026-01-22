@@ -17,15 +17,15 @@ Keep all DSNP queries one place. Let all the team members can access to the most
 
 #### 2. Helper Functions that can make your life easy
 
-[Check HelperFunction](./snp_query_box/DsnpHelperFunction.py)
+[Check HelperFunction](./cdst_snp_query_box/DsnpHelperFunction.py)
 
 #### 3. Constant Values we use frequently
 
-[Check Dsnp Values](./snp_query_box/DsnpVal.py)
+[Check Dsnp Values](./cdst_snp_query_box/DsnpVal.py)
 
 #### 4. Also, there are frequently used transformations
 
-[Check dsnp transforms](./snp_query_box/dsnp_transform/)
+[Check dsnp transforms](./cdst_snp_query_box/dsnp_transform/)
 
 ---
 <br>
@@ -35,17 +35,23 @@ Keep all DSNP queries one place. Let all the team members can access to the most
 
 1. clone or pull the repo
 2. if you are on conda env, deactivate conda env in terminal `conda deactivate`
-3. go under the repo `snp_query_box`
-4. in your terminal and run `pip install -r requirements.txt`
-5. in your terminal `python setup.py clean --all install`
-6. `pip install .` to install in your local directory
-7. it is ready to use the queries
+3. go under the repo `cdst_snp_query_box`
+4. in your terminal and run `pip install cdst_snp_query_box=={version}`
+5. it is ready to use the queries
 
 <br>
+> how to build
+0. go the the folder, update version in setup.cfg
+1. rm -rf dist
+2. rm -rf build
+3. python -m build
+4. check build includes the right script
+4. push to master
+5. jenkins build
 
 Example
 ```
-from snp_query_box import DsnpHelperFunction, populDashQueries  
+from cdst_snp_query_box import DsnpHelperFunction, populDashQueries  
 
 #use helper functions
 DsnpHelperFunction.last_date_of_month("2023-01-29")

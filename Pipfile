@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://nexus.mgmt.aig.aetna.com/repository/pypi-hosted/simple"
+verify_ssl = true
+name = "nexus"
+
+[packages]
+
+[dev-packages]
+
+[requires]
+python_version = ">=3.7"

@@ -1,0 +1,16 @@
+analyze:
+  scan:
+    enabled: false
+build:
+  scan:
+    enabled: true
+bake:
+  scan:
+    enabled: false
+test:
+  skip: true
+  scan:
+    enabled: false
+deploy:
+  prefixWithTenant: true
+  port: 8000

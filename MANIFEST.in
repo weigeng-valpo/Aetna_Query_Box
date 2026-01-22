@@ -1,1 +1,1 @@
-recursive-include data *
+recursive-include src/cdst_snp_query_box/data *
